@@ -155,9 +155,11 @@ if (mix === true) {
 // -- they are so we console.log 'throw away the food!'
 
 /*
+//FIX - time is supposed to be a variable, but it has been designated as a constant. We should change the code to say let time = 4;
 let temp = 40;
 const time = 4;
 
+//FIX - we want to check that BOTH statements are true. To do this we should use && instead of || inside the if statement
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -171,6 +173,10 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
+//FIX - we want to check if age is greater than or equal to minAge and then console.log 'enter' if that is true. Currently, if age is greater than minAge it will output 'no entry'
+// This is the opposite of what we want. It also excludes the case where age and minAge are the same. People should enter if that is true. There are two ways we can fix this. 
+// Way #1: change the first if statement to minAge > age and leave the rest of the code the same
+// Way #2: Leave the if statement the same. Just swap the console.log statements so that console.log('enter') is contained in the if and console.log('no entry') is the else.
 if(minAge <= age) {
   console.log('no entry');
 } else {

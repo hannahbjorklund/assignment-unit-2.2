@@ -76,7 +76,7 @@ console.log(secret)
 // Create a variable named isStudent and set it equal to the boolean value true.
 // Create a variable named age and let it equal the number 34
 // Create a variable named zip and let it equal the number 55407
-// Check to see if isStudent is true AND if zip is greater than 8000
+// Check to see if isStudent is true AND zip is greater than 8000
 // If so, we console.log 'You're a student on the West Coast!'
 // If this is not the case, we check to see if isStudent is false OR if age is less than 30
 // If either is true, we console.log 'What are your hobbies?'
@@ -138,10 +138,13 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - we are supposed to set colorOne to blue and colorTwo to red, but the code does the opposite. We should swap 'red' and 'blue'.
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+// FIX - we also need to set colorTwo to purple. Inside the if statement, only colorOne is changed. We should add another line of code below it that says 
+// colorTwo = 'purple';
 if (mix === true) {
   colorOne = 'purple';
 }
